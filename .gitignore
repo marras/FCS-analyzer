@@ -1,3 +1,7 @@
+# Converted QT designer files
+moc_*.cpp
+ui_*.h
+
 # Compiled Object files
 *.slo
 *.lo
