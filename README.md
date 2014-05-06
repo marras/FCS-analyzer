@@ -1,6 +1,13 @@
 FCS-analyzer
 ============
 
+How to compile:
+
+- qmake
+- (make clean) - first time
+- make
+- ./FCS_analyzer
+
 Needs:
 
 - libqwt 5.2.2
