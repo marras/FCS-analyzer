@@ -13,7 +13,7 @@ DEPENDPATH += .
 #DEFINES += QWT_DLL
 #Linux:
 INCLUDEPATH += . /usr/include/qt4 /usr/include/qwt ./src
-QMAKE_LIBDIR += .
+QMAKE_LIBDIR += ./levmar-2.4
 LIBS += -lqwt -llevmar -llapack -lblas
 
 # Input
