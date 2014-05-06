@@ -1,3 +1,6 @@
+# Compiled binary
+FCS_analyzer
+
 # Converted QT designer files
 moc_*.cpp
 ui_*.h

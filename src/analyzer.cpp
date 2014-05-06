@@ -421,11 +421,11 @@ Analyzer :: Analyzer (QWidget * par) {
   info = NULL;
   setupUi (this);
 
-  QwtSymbol s1(QwtSymbol::Diamond, QBrush(QColor(Qt::red)), QPen (QColor(Qt::black)), QSize (10,10));
-  QwtSymbol s2(QwtSymbol::Diamond, QBrush(QColor(Qt::green)), QPen (QColor(Qt::black)), QSize (10,10));
+  QwtSymbol * s1 = new QwtSymbol(QwtSymbol::Diamond, QBrush(QColor(Qt::red)), QPen (QColor(Qt::black)), QSize (10,10));
+  QwtSymbol * s2 = new QwtSymbol(QwtSymbol::Diamond, QBrush(QColor(Qt::green)), QPen (QColor(Qt::black)), QSize (10,10));
   
-  m1.setSymbol (&s1);
-  m2.setSymbol (&s2);
+  m1.setSymbol (s1);
+  m2.setSymbol (s2);
 
   QwtScaleEngine * log_engine = new QwtLog10ScaleEngine;
   qwtPlotCF->setAxisScaleEngine (QwtPlot::xBottom, log_engine);
