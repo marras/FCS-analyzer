@@ -19,6 +19,10 @@ Needs:
 	- libblas
 	- liblapack
 
+```
+sudo apt-get install libqwt-dev liblapack libblas f2c
+cd levmar-2.4; make
+```
 
 ## Docs
 Old version: http://docs.huihoo.com/qwt/class_qwt_plot_marker.html#eb0c9bdaeb6dfd7e86ef832fa5f8e3dd
